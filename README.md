@@ -18,9 +18,3 @@ A modern and responsive Hotel ERP System built using **HTML, CSS, and JavaScript
 
 
 
-
-## Installation / How to Use
-
-1. Download or clone the repository:  
-```bash
-git clone https://github.com/SHUJAHAT055/HOTEL-ERP-SYSTEM.git
