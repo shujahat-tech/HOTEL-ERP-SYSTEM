@@ -14,8 +14,7 @@ body {
 
 /* Layout */
 .container {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block; /* flex ko block me change kiya taake fixed sidebar ke neeche content overlap na ho */
     min-height: 100vh;
 }
 
@@ -82,8 +81,8 @@ body {
 
 /* Content Area */
 .content {
-    margin-left: 260px;  /* Left side thoda zyada */
-    margin-right: 25px;  /* Right side thoda kam */
+    margin-left: 220px;  /* Sidebar width ke barabar */
+    margin-right: 25px;
     padding: 40px 20px;
     flex: 1;
     background: white;
