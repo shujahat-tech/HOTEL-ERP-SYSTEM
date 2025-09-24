@@ -14,7 +14,8 @@ body {
 
 /* Layout */
 .container {
-    display: block; /* flex ko block me change kiya taake fixed sidebar ke neeche content overlap na ho */
+    display: flex;
+    flex-wrap: nowrap;
     min-height: 100vh;
 }
 
@@ -81,7 +82,7 @@ body {
 
 /* Content Area */
 .content {
-    margin-left: 220px;  /* Sidebar width ke barabar */
+    margin-left: 260px;
     margin-right: 25px;
     padding: 40px 20px;
     flex: 1;
@@ -91,7 +92,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Updated Header Styling */
+/* Header Styling */
 header {
     background: linear-gradient(90deg, #1c3f72, #2a5dab, #3b73d1);
     color: #e0e7ff;
@@ -151,12 +152,12 @@ section h2 {
     padding-bottom: 5px;
 }
 
-/* Footer */
-footer {
+/* Footer inside content aligned right */
+.content footer {
+    text-align: right; /* Right side alignment */
     margin-top: 60px;
     padding: 20px;
     color: #888;
-    text-align: center;
     font-size: 14px;
     border-top: 1px solid #eee;
 }
